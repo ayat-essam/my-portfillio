@@ -154,6 +154,13 @@
             margin-bottom: 10px;
             font-size: 1.5rem;
         }
+        .card h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .card h3 a:hover {
+            text-decoration: underline;
+        }
         .card .date {
             color: var(--accent-purple);
             font-weight: bold;
@@ -198,7 +205,7 @@
         .skill-tag i {
             margin-right: 8px;
         }
-        /* Projects: Add GitHub Icons */
+        
         .project-card {
             text-align: center;
         }
@@ -210,7 +217,7 @@
         .project-card a:hover {
             color: var(--secondary-blue);
         }
-        /* Education */
+        
         .education {
             background: var(--bg-light);
         }
@@ -219,14 +226,14 @@
             max-width: 600px;
             margin: 0 auto;
         }
-        /* Footer */
+        
         footer {
             background: var(--primary-blue);
             color: var(--white);
             text-align: center;
             padding: 20px;
         }
-        /* Responsive */
+        
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             .grid { grid-template-columns: 1fr; }
@@ -234,9 +241,8 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
+    
     <section class="hero">
-        <img src="https://via.placeholder.com/150?text=Ayat+Essam" alt="Ayat Essam Profile" class="profile-img">
         <h1>Ayat Essam</h1>
         <p>Passionate Flutter Developer | Building Modern Mobile Apps with Dart & Firebase</p>
         <div class="contact">
@@ -247,7 +253,7 @@
         </div>
     </section>
 
-    <!-- Work Experience -->
+    
     <section id="experience">
         <h2>Work Experience</h2>
         <div class="grid">
@@ -272,7 +278,6 @@
         </div>
     </section>
 
-    <!-- Skills -->
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-grid">
@@ -291,34 +296,34 @@
         </div>
     </section>
 
-    <!-- Technical Projects -->
+    
     <section id="projects">
         <h2>Technical Projects (Oct 2024 – Oct 2025)</h2>
         <div class="grid">
             <div class="card project-card">
-                <h3>Clinic App</h3>
+                <h3><a href="https://github.com/Ayat-Essam/clinic-app" target="_blank">Clinic App</a></h3>
                 <p>Built a scalable clinic management mobile app implementing BLoC state management, layered clean architecture (presentation/domain/data), and a reusable design system for consistent UI components and theming across the app.</p>
                 <a href="https://github.com/Ayat-Essam/clinic-app" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
             </div>
             <div class="card project-card">
-                <h3>Finance App</h3>
+                <h3><a href="https://github.com/Ayat-Essam/finance-app" target="_blank">Finance App</a></h3>
                 <p>A Flutter mobile app with personalized user profile, carousel slider, and notification system to enhance user engagement.</p>
                 <a href="https://github.com/Ayat-Essam/finance-app" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
             </div>
             <div class="card project-card">
-                <h3>Fashion App</h3>
+                <h3><a href="https://github.com/Ayat-Essam/fashion-app" target="_blank">Fashion App</a></h3>
                 <p>Designed and developed a sleek fashion shopping app using Flutter, with a focus on clean UI, responsive layout, and modular reusable components.</p>
                 <a href="https://github.com/Ayat-Essam/fashion-app" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
             </div>
             <div class="card project-card">
-                <h3>Coffee App</h3>
+                <h3><a href="https://github.com/Ayat-Essam/coffee-app" target="_blank">Coffee App</a></h3>
                 <p>Built a modern coffee ordering app in Flutter, featuring intuitive navigation, smooth user experience, and customizable UI components.</p>
                 <a href="https://github.com/Ayat-Essam/coffee-app" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
             </div>
         </div>
     </section>
 
-    <!-- Education -->
+    
     <section id="education" class="education">
         <h2>Education</h2>
         <div class="card">
@@ -347,11 +352,10 @@
         }, observerOptions);
 
         document.querySelectorAll('.card').forEach(card => {
-
             observer.observe(card);
         });
 
-        // Smooth Scrolling for Anchor Links (if added)
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
