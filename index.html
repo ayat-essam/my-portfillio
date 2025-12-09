@@ -1,16 +1,95 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayat Essam - Flutter Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ayat Essam</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-// Optional: Add more interactivity, like a dark mode toggle or project hover effects
-// Example: Simple alert on contact click
-document.querySelector('#contact a[href^="mailto"]').addEventListener('click', () => {
-    alert('Thanks for reaching out!');
-});
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Ayat Essam</h1>
+            <p>Flutter Developer | Building Innovative Mobile Apps</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Motivated Flutter Developer with 6+ months of experience building mobile apps using Dart, Firebase, and REST APIs. Skilled in state management (BLoC, Provider), Clean Architecture, and Agile methodologies. I love creating scalable, user-engaged applications and collaborating in dynamic teams.</p>
+        <p>Location: Beni-Suef, Egypt | Email: ayatessam844@gmail.com | Phone: 01028470708</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">Flutter & Dart</div>
+            <div class="skill">State Management: BLoC, Provider</div>
+            <div class="skill">Architecture: Clean Architecture, MVVM</div>
+            <div class="skill">Backend: Firebase, REST APIs</div>
+            <div class="skill">Testing: Unit, Widget, ISTQB</div>
+            <div class="skill">Tools: Git, Android Studio, Figma</div>
+            <div class="skill">Methodologies: Agile, Waterfall</div>
+            <div class="skill">Soft Skills: Problem Solving, Team Collaboration</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Clinic Management App</h3>
+                <p>Built with Flutter, BLoC, and Clean Architecture. Features reusable UI components and state management.</p>
+                <a href="[Your GitHub Link for Clinic App]" target="_blank">GitHub</a> | <a href="[Demo Video Link]" target="_blank">Demo</a>
+            </div>
+            <div class="project">
+                <h3>Finance App</h3>
+                <p>Integrated Firebase for real-time data and push notifications, boosting engagement by 25%.</p>
+                <a href="[Your GitHub Link for Finance App]" target="_blank">GitHub</a> | <a href="[Play Store Link]" target="_blank">Play Store</a>
+            </div>
+            <div class="project">
+                <h3>Fashion Shopping App</h3>
+                <p>Responsive UI with modular components, optimized for performance (launch time reduced to 1.8s).</p>
+                <a href="[Your GitHub Link for Fashion App]" target="_blank">GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Coffee Ordering App</h3>
+                <p>Custom UI with smooth navigation and state persistence, optimized for 60 FPS+ on mid-range devices.</p>
+                <a href="[Your GitHub Link for Coffee App]" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's connect! Reach out for collaborations or opportunities.</p>
+        <ul>
+            <li>Email: <a href="mailto:ayatessam844@gmail.com">ayatessam844@gmail.com</a></li>
+            <li>Phone: 01028470708</li>
+            <li>LinkedIn: <a href="[Your LinkedIn URL]" target="_blank">LinkedIn</a></li>
+            <li>GitHub: <a href="[Your GitHub URL]" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ayat Essam. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
